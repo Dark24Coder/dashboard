@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <form>
+        <h2 style="padding-bottom: 20px;">Contact Us</h2>
+        <div class="name">
+        <div class="first-name" style="padding-bottom: 20px;">
+          <label for="firstName">First Name *</label><br>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="last-name">
+            <label for="lastName">Last Name *</label><br>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+    </div>
+
+        <div class="form-group" style="padding-bottom: 20px;">
+          <label for="email" class="email">Email Address *</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group" style="padding-bottom: 20px;">
+          <label>Query Type *</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="generalEnquiry" name="queryType" value="generalEnquiry" required>
+              <label for="generalEnquiry">General Enquiry</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="supportRequest" name="queryType" value="supportRequest" required>
+              <label for="supportRequest">Support Request</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group" style="padding-bottom: 20px;">
+          <label for="message">Message *</label><br>
+          <textarea id="message" name="message" required cols="75" rows="5"></textarea>
+        </div>
+
+        <div class="checkbox" style="padding-bottom: 30px;">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent" class="class">I consent to being contacted by the team *</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+</body>
+</html>
