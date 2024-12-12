@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color:  #ccfcfb;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 2;
     color: #333;
@@ -28,7 +28,8 @@ form{
 input{
     border: 1px solid #333;
     border-radius: 5px;
-    padding: 3px 50px;
+    padding: 15px 50px;
+    outline: none;
 }
 
 .name{
@@ -38,21 +39,33 @@ input{
 
 .form-group input[name="email"]{
     width: 100%;
-    height: 30px;
+    height: 40px;
+    padding-inline-start: 1rem;
+}
+
+textarea{
+    outline: none;
+    padding-inline-start: 1rem;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .first-name input[type="text"]{
-    width: 95%;
-    height: 30px;
+    width: 100%;
+    height: 35px;
+    padding-inline-start: 1rem;
 }
+
 .last-name input[type="text"]{
     width: 100%;
-    height: 30px;
+    height: 35px;
+    padding-inline-start: 1rem;
 }
 
 .radio-group{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: start;
 }
@@ -67,10 +80,7 @@ input{
 .checkbox{
     display: flex;
     align-items: center;
-}
-
-.class{
-    padding-inline-start: 17px;
+    gap: 10px;
 }
 
 button[type="submit"]{
